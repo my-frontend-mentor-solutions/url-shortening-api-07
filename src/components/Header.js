@@ -9,7 +9,7 @@ export default function Header() {
 
     return (
         <>
-            <div className='w-full h-20 bg-gray-300 flex items-center px-5 justify-between md:justify-normal sticky top-0 bg-white shadow-sm'>
+            <div className='w-full h-20 bg-gray-300 flex items-center px-5 justify-between md:justify-normal sticky top-0 bg-white shadow-sm z-20'>
                 <img src={logoDark} alt="" />
                 <i id='menuIcon'
                     class={`fa-solid fa-bars md:hidden text-grayish-violet text-3xl ${menuIconBack} bg- px-3 py-2 rounded-lg`}
