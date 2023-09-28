@@ -43,7 +43,7 @@ const Tabs = (props) => {
 const MenuDiv = () => {
 
     return (
-        <div id='menuContainer' className='md:hidden w-full h-full fixed top-20 bg-[#00000030] flex justify-center'>
+        <div id='menuContainer' className='md:hidden w-full h-full fixed top-20 bg-[#00000030] flex justify-center z-40'>
             <div id='menuWrapper' className='fixed top-20 w-[75%] bg-dark-voilet rounded-lg text-white flex flex-col justify-center items-center py-5 shadow-menuBox'>
                 <MenuTabs name={'Features'} />
                 <MenuTabs name={'Pricing'} />

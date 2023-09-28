@@ -42,13 +42,7 @@ export default function Links() {
 
         try {
             const successful = document.execCommand("copy");
-            if (successful) {
-                // Text successfully copied to clipboard
-                // You can show a success message here
-            } else {
-                // Copy command failed
-                // You can show an error message here
-            }
+            
         } catch (err) {
             console.error("Copy to clipboard failed:", err);
         }
@@ -58,7 +52,7 @@ export default function Links() {
 
     const copyLink = () => {
         if (!shortenedURL) {
-            return; // Don't copy if the URL is empty
+            return;
         }
 
         copyToClipboard(shortenedURL);
@@ -69,8 +63,6 @@ export default function Links() {
         }, 2000);
     };
 
-
-
     return (
         <div className='w-full my-10 flex flex-col justify-center items-center bg-slate-200 py-5'>
 
@@ -79,6 +71,7 @@ export default function Links() {
                 <div className='w-[90%] md:flex-[17] md:mr-5'>
                     <input
                         type="text"
+                        id="URLinput"
                         name="url"
                         placeholder='Enter your link here'
                         className='w-full rounded-xl h-fit py-3  px-5 outline-none focus:border-cyan border-2 border-solid'
@@ -86,15 +79,15 @@ export default function Links() {
                     />
                     <p className='text-red text-lg mt-1 ml-2 h-[18px]'>{errorText}</p>
                 </div>
-                <p className='w-fit text-white bg-cyan md:hover:bg-cyan-hover active:bg-cyan-hover hover:cursor-pointer rounded-xl text-center px-6 md:px-7 py-2 md:py-3 font-bold text-xl md:flex-[3] mt-5 md:m-0' onClick={urlShortener}>Shorten It!</p>
+                <p className='w-fit text-white bg-cyan md:hover:bg-cyan-hover active:bg-cyan-hover hover:cursor-pointer rounded-xl text-center px-6 md:px-4 py-2 md:py-3 font-bold text-xl md:flex-[3] mt-5 md:m-0' onClick={urlShortener}>Shorten It!</p>
 
             </div>
 
             <div className='w-[90%] md:w-[80%] my-5 flex flex-col md:flex-row bg-white justify-center items-center rounded-xl py-5 md:px-10'>
                 <div className='w-[90%] md:flex-[9] flex flex-col md:flex-row md:justify-between text-base md:text-lg'>
-                    <p>{userInput ? userInput : "Your URL..."}</p>
+                    <p>{userInput ? userInput : "Your URL"}</p>
                     <p className='md:hidden border-solid border-[1px] border-[#00000017] w-full my-3'></p>
-                    <p className='text-cyan'>{shortenedURL ? shortenedURL : "Shortened URL..."}</p>
+                    <p className='text-cyan'>{shortenedURL ? shortenedURL : "Shortened URL"}</p>
                 </div>
 
                 <p
