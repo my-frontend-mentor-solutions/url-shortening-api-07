@@ -5,7 +5,7 @@ import customizable from '../img/fully-customizable.svg'
 
 export default function Cards() {
     return (
-        <div className='w-full flex flex-col items-center justify-center bg-slate-100 py-10'>
+        <div className='w-full flex flex-col items-center justify-center bg-white py-10'>
             <div className='flex flex-col items-center justify-center text-center p-6'>
                 <p className='text-3xl font-bold mb-2'>Advanced Statistics</p>
                 <p className='text-gray'>Track how links are performing across the web with our advanced statistics dashboard.</p>
@@ -21,9 +21,9 @@ export default function Cards() {
 
 const CardTemplate = (props) => {
     return (
-        <div className='bg-white flex flex-col justify-center items-center text-center mx-6 my-8 p-8 xl:mx-16 rounded-xl'>
+        <div className='bg-slate-100 flex flex-col justify-center items-center text-center mx-6 my-8 p-8 xl:mx-16 rounded-xl'>
 
-            <div className='bg-very-dark-blue rounded-full w-fit translate-y-[-80%]'>
+            <div className='bg-very-dark-blue rounded-full w-fit translate-y-[-90%]'>
                 <img src={props.img} alt="" className='m-4' />
             </div>
             <p className='font-bold text-2xl translate-y-[-60%]'>{props.header}</p>

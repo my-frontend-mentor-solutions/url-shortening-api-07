@@ -30,10 +30,10 @@ export default function Footer() {
                     <Links name={'Contact'} />
                 </div>
                 <div className=' my-5 md:mx-8 lg:mx-10'>
-                    <i className="fa-brands fa-whatsapp text-white hover:text-cyan hover:cursor-pointer mx-3 md:mb-3 text-3xl"></i>
-                    <i className="fa-brands fa-instagram text-white hover:text-cyan hover:cursor-pointer mx-3 md:mb-3 text-3xl"></i>
-                    <i className="fa-brands fa-twitter text-white hover:text-cyan hover:cursor-pointer mx-3 md:mb-3 text-3xl"></i>
-                    <i className="fa-brands fa-facebook text-white hover:text-cyan hover:cursor-pointer mx-3 md:mb-3 text-3xl"></i>
+                    <i className="fa-brands fa-whatsapp text-white active:hover:text-cyan md:hover:text-cyan hover:cursor-pointer mx-3 md:mb-3 text-3xl"></i>
+                    <i className="fa-brands fa-instagram text-white active:hover:text-cyan md:hover:text-cyan hover:cursor-pointer mx-3 md:mb-3 text-3xl"></i>
+                    <i className="fa-brands fa-twitter text-white active:hover:text-cyan md:hover:text-cyan hover:cursor-pointer mx-3 md:mb-3 text-3xl"></i>
+                    <i className="fa-brands fa-facebook text-white active:hover:text-cyan md:hover:text-cyan hover:cursor-pointer mx-3 md:mb-3 text-3xl"></i>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@ export default function Footer() {
 
 const Links = (props) => {
     return (
-        <div className='text-gray hover:text-cyan my-1 md:my-2 hover:cursor-pointer'>
+        <div className='text-gray active:hover:text-cyan md:hover:text-cyan my-1 md:my-2 hover:cursor-pointer'>
             {props.name}
         </div>
     )

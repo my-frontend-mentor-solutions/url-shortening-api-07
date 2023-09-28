@@ -24,7 +24,7 @@ export default function Header() {
                     </div>
                     <div className='flex items-center'>
                         <Tabs name={'Login'} />
-                        <p className='ml-3 text-white bg-cyan hover:bg-cyan-hover hover:cursor-pointer rounded-full px-5 py-2 font-bold text-[17px]'>Sign Up</p>
+                        <p className='ml-3 text-white bg-cyan md:hover:bg-cyan-hover active:bg-cyan-hover hover:cursor-pointer rounded-full px-5 py-2 font-bold text-[17px]'>Sign Up</p>
                     </div>
                 </div>
             </div>
